@@ -1,0 +1,23 @@
+.multiple-tabs{
+    padding: rem-calc(25px) 0;
+    .tabs{
+        border:none;
+        border-bottom:1px solid #e6e6e6;
+       
+        &>li{
+            border:1px solid #e6e6e6;
+            margin-right: 1px;
+        }
+        
+        .is-active{
+            a{
+                color:$tab-color-active;
+            }
+        }
+        
+        a:focus{
+            color:white;
+        }
+        
+    }
+}

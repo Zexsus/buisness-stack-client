@@ -1,0 +1,54 @@
+.contact-content{
+    padding-top: 3px;
+    .map{
+        position: relative;
+        background:  url(../images/content-shadow.png), url('../images/map.png');
+        background-repeat: no-repeat;
+        background-position:center 0px, center;
+        background-size: auto ,  1200px 517px;
+        height: rem-calc(515);
+
+        .pointer{
+            position:absolute;
+            top:32.5%;
+            left:57.96%;
+            width: rem-calc(67);
+            height: rem-calc(74);
+        }
+    }
+
+    .field{
+        margin-top: -3px;
+        height: rem-calc(450);
+        width: rem-calc(300);
+        background-image: url('../images/contact-field.png');
+        padding: rem-calc(66) rem-calc(20);
+        padding-bottom: 0;
+        position: relative;
+        z-index: 2;
+
+        form{
+            position: relative;
+        }
+
+        span{
+            font-size: rem-calc(16);
+            color: $white;
+            font-weight: bold;
+            line-height: 2.5;
+            text-align: left;
+        }
+
+        p{
+            font-size: rem-calc(14);
+            font-family: "Lato";
+            color: rgb(255, 255, 255);
+            line-height: 1.571;
+            text-align: left;
+
+        }
+
+
+    }
+}
+

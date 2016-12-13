@@ -1,0 +1,13 @@
+.DS_Store
+bower_components
+node_modules
+npm-debug.log
+css
+blog.html
+index.html
+page-2cols.html
+team.html
+contact.html
+portfolio.html
+
+

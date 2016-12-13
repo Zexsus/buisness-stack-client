@@ -1,0 +1,36 @@
+.accordion-container{
+    
+    .is-active{
+   
+        &>.accordion-title{
+            background-color: $primary-color;
+            color:white;
+
+            &::before{
+                content: url('../images/arrow-down.png');
+            }      
+        }
+    }
+
+    .accordion-title{
+
+        transition: all 0.3s ease 0s;
+        &:hover, &:focus{
+            color:$accordion-item-color-hover;
+        }
+
+        &::before{
+            top:22%;
+            right:0;
+            padding: rem-calc(12) rem-calc(12);
+            content: url('../images/arrow-up.png');
+            background-color: $secondary-color;
+
+        }
+    }
+
+    .accordion-content{
+        font-weight:700;
+        line-height: 1.8;
+    }
+}

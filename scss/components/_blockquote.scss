@@ -1,0 +1,22 @@
+.blockquote{
+
+        span{
+            padding:rem-calc(5) rem-calc(13);
+            font-size: rem-calc(19);
+            font-family: "Lato";
+            color: rgb(42, 83, 94);
+            font-style: italic;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: left;
+            border:1px solid #d2cbcb;
+            border-left: 5px solid $primary-color;
+            display: block;
+
+        }
+
+        .description{
+            padding: rem-calc(25) 0;
+            font-size: rem-calc(14);
+        }
+    }

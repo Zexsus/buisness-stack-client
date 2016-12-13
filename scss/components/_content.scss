@@ -1,0 +1,24 @@
+.content{
+    background-image: url(../images/content-shadow.png);
+    background-repeat: no-repeat;
+    background-position: center 3px;
+    padding: rem-calc(39) 0;
+    margin: 2px 0;
+    margin-bottom: 10px;
+    img{
+        padding: rem-calc(7) 0;
+        &.icon{
+            padding: 0 0;
+             height: rem-calc(33);
+        }
+    }
+    
+    b{
+        display: inline-block;
+        color:$primary-color;
+        padding-bottom:rem-calc(25);
+        font-weight: 400;
+    }
+    
+
+}

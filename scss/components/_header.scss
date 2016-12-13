@@ -1,0 +1,116 @@
+header{
+    background:                     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAJ0lEQVQIW2Pcv3//f0dHR0ZkmgEIYGIwNiOIQQxAMQndFJAttDMRAPUxMAaq3KWpAAAAAElFTkSuQmCC);background-repeat: repeat-x;
+    height:100px;
+    padding-top: rem-calc(35);        
+    padding-bottom: rem-calc(25);      
+    position: relative;
+    z-index: 3;
+
+    .menu-item{
+        position: relative;
+        color: lighten(rgb(77, 123, 135), 20%);
+        font-weight: 700;
+        transition: all 0.3s ease 0s;
+
+
+        @media screen and (min-width:750px){
+            transition: all 0.3s ease 0s;
+            &.active::before{
+
+                content:"";
+                background-color: $secondary-color;
+                position: absolute;
+                align-content: center;
+                top: -36px;
+                height:6px;
+                width:100%;
+            }
+
+            &:hover::before{
+                content:"";
+                background-color: #2a535e;
+                position: absolute;
+                align-content: center;
+                top: -36px;
+                height:6px;
+                width:100%;
+            }
+        }
+    }
+
+    .submenu{
+        box-shadow: 0 0 10px -2px black;
+        @media screen and (min-width:750px){
+            transform: translate(100%, -36px);
+        }
+        @media screen and (max-width:750px)
+        {
+            margin-left: 100px;
+            max-width: rem-calc(60);
+        }
+
+
+
+    }
+
+    .menu-dropdown-item{
+
+        background-color: #f7f7f7;
+
+        &:hover{
+            background-color: white;
+            border-top:1px solid #d2cbcb;
+            border-bottom:1px solid #d2cbcb;
+        }
+        &:first-child:before{
+            content: " ";
+            display:block;
+            border-bottom:1px solid #d2cbcb;
+            border-left:1px solid #d2cbcb;
+            box-shadow: -2px 2px 6px -2px black;
+            width: 10px;
+            height: 10px;
+            background: #f7f7f7;
+            position: absolute;
+            top: 19px;
+            left: 0%;
+            transform: rotateZ(45deg) translateX(-90%);
+        }
+
+    }
+
+    .logo-text{
+        flex: 0 0 auto;
+        float:left;
+
+        img{
+            width:30px;
+            height:35px;
+            float:left;
+            margin-right: 13px;
+        }
+
+
+
+        strong{
+            font-size: 26px;
+            font-weight: 900;
+            color: rgb(42, 83, 94);
+            text-transform: uppercase;
+            line-height: 0.917;
+            text-align: left;
+            height: 17px;
+        }
+
+        span{
+            content:"Simple. Elegent. Responsive";
+            display:block;
+            font-size: 12px;
+            color: rgb(122, 143, 149);
+            line-height: 1;
+            text-align: left;
+        }
+
+
+    }
+}

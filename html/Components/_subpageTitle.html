@@ -1,0 +1,42 @@
+<div class="path">
+    <div class="row">
+        <div class="shrink column">
+
+            <p>
+              <a href="index.html">Home</a> /     
+               
+                @@if(context.path === "2 col page"){
+                <a href="page-2cols.html">Page</a> / 
+                <a href="page-2cols.html">@@path</a> 
+                }
+                
+                @@if(context.path === "Blog"){
+                <a href="blog.html">@@path</a> 
+                } 
+                
+                @@if(context.path === "Contact"){
+                <a href="contact.html">@@path</a> 
+                } 
+                
+                @@if(context.path === "Portfolio"){
+                <a href="portfolio.html">@@path</a> 
+                } 
+                
+                @@if(context.path === "Team"){
+                <a href="team.html">@@path</a> 
+                }
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="content-title">
+    <div class="wrapper">
+        <div class="row">
+            <div class="shrink column">
+                <h2>@@subtitle</h2>
+            </div>
+        </div>
+    </div>
+</div>
