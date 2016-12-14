@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    @@include('_header.html')
+    <body>
+
+        @@include('_topbar.html', {
+        "name": "page-2cols"
+        })
+        @@include('_subpageTitle.html',{
+        "path": "2 col page",
+        "subtitle" : "2 Columns Layout"
+        })
+
+        <div class="content">
+            <div class="row">
+                <div class=" large-18 column ">
+
+                    <b>
+                        Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. 
+                    </b>
+
+                    <b>
+                        The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam.
+                    </b>
+                    @@include('_blockquote.html')
+                    @@include('_accordion.html')
+                    @@include('_multipletabs.html')
+                </div>
+                <div class="small-24 large-5 large-offset-1">
+                    <aside class="sidebar">
+
+                        <section class="blog-categories">
+                            <h4>Blog Categories</h4>
+                            <nav>
+                                <ul>
+                                    <li><a href="">Design  <span class="count">1</span></a></li>
+                                    <li><a href="">Programming <span class="count">3</span></a></li>
+                                    <li><a href="">Art <span class="count">5</span></a></li>
+                                    <li><a href="">Opinion <span class="count">3</span></a></li>
+                                    <li><a href="">Lifestyle <span class="count">10</span></a></li>
+                                </ul>
+                            </nav>
+                        </section>
+
+                        <section class="side-menu">
+                            <h4>Side Menu</h4>
+                            <nav>
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="page-2cols.html">Pages</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+
+                                </section>
+                            <section class="recent-tweet">
+                                <h4>Recent Tweet</h4>
+                                <div class="item">    
+                                    <span class="icon"> <i class="fa fa-twitter"></i></span>
+                                    <span class="tweet-text"> 
+                                        <p>ur posturings, our imagined self-importance, the delusion ...</p>
+                                    </span>
+                                    <span class="date">Fri Sep 21 08:25:04</span>
+                                </div>
+                                <div class="item">    
+
+                                    <span class="icon"> <i class="fa fa-twitter"></i></span>
+                                    <span class="tweet-text"> 
+                                        <p>ur posturings, our imagined self-importance, the delusion ...</p>
+                                    </span>
+                                    <span class="date">Fri Sep 21 08:25:04</span>
+                                </div>
+                                <div class="item">    
+                                    <span class="icon"> <i class="fa fa-twitter"></i></span>
+                                    <span class="tweet-text"> 
+                                        <p>ur posturings, our imagined self-importance, the delusion ...</p>
+                                    </span>
+                                    <span class="date">Fri Sep 21 08:25:04</span>
+                                </div>
+                            </section>
+
+                            </aside>
+
+                        </div>
+                </div>
+
+            </div>
+
+            @@include('_footer.html')
+
+            <script src="bower_components/jquery/dist/jquery.js"></script>
+            <script src="bower_components/what-input/what-input.js"></script>
+            <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+
+
+            <script src="js/app.js"></script>
+
+            </body>
+        </html>
