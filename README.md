@@ -4,8 +4,6 @@
 
 ```
 node.js 
-npm install bower
-bower install jquery
-npm install gulp 
+npm install 
 gulp
 ```
