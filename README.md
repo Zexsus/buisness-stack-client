@@ -5,5 +5,6 @@
 ```
 node.js 
 npm install 
+bower install
 gulp
 ```
